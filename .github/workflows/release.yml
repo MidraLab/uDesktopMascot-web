@@ -33,4 +33,5 @@ jobs:
       - name: Deploy to GitHub Pages
         env:
           GIT_USER: MidraLab
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: pnpm run deploy
