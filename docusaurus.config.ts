@@ -9,11 +9,11 @@ const config: Config = {
   tagline: 'uDesktopMascot Documentation',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://github.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/MidraLab/uDesktopMascot/releases/tag/v0.0.1',
+  // サイトのプロダクションURLをここに設定します
+  url: 'https://midralab.github.io/uDesktopMascot',
+  // サイトが提供される/<baseUrl>/パス名を設定します
+  // GitHubページのデプロイメントの場合、通常は'/<projectName>/'です
+  baseUrl: '/uDesktopMascot/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
