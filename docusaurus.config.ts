@@ -13,7 +13,7 @@ const config: Config = {
   url: 'https://midralab.github.io/',
   // サイトが提供される/<baseUrl>/パス名を設定します
   // GitHubページのデプロイメントの場合、通常は'/<projectName>/'です
-  baseUrl: '/uDesktopMascot/',
+  baseUrl: '/uDesktopMascot-web/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
