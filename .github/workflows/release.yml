@@ -31,7 +31,7 @@ jobs:
         run: pnpm build
 
       - name: Deploy to GitHub Pages
-        env:
-          GIT_USER: MidraLab
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: pnpm run deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
