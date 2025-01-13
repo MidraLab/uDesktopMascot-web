@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunku_desktop_mascot_web=self.webpackChunku_desktop_mascot_web||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/MidraLab/uDesktopMascot/releases/tag/v0.0.1/blog","blogTitle":"Blog","authorsListPath":"/MidraLab/uDesktopMascot/releases/tag/v0.0.1/blog/authors"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunku_desktop_mascot_web=self.webpackChunku_desktop_mascot_web||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/uDesktopMascot/blog","blogTitle":"Blog","authorsListPath":"/uDesktopMascot/blog/authors"}')}}]);
