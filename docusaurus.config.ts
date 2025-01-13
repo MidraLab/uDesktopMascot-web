@@ -82,7 +82,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/MidraLab/uDesktopMascot-web',
+          href: 'https://github.com/MidraLab/uDesktopMascot',
           label: 'GitHub',
           position: 'right',
         },
@@ -123,7 +123,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} MidraLab. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
