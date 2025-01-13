@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:  # 手動実行のみに設定
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  # 使用するNode.jsのバージョン
+
+    - name: Install dependencies
+      run: yarn
+
+    - name: Build the site
+      run: yarn build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+
+    - name: Create Deployment
+      uses: actions/deployments@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        environment: production
+        description: 'Deploy to GitHub Pages'
