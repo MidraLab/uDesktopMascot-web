@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunku_desktop_mascot_web=self.webpackChunku_desktop_mascot_web||[]).push([[8339],{6297:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/uDesktopMascot/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
