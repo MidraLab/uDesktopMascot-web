@@ -8,5 +8,5 @@ Let's discover **uDesktopMascot in less than 5 minutes**.
 
 ## Getting Started
 
-ああ
+test
 

@@ -30,6 +30,9 @@ jobs:
       - name: Build the site
         run: pnpm build
 
+      - name: Set GIT_USER environment variable
+        run: echo "GIT_USER=MidraLab" >> $GITHUB_ENV
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
