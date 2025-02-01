@@ -7,4 +7,3 @@ sidebar_position: 1
 Let's discover **uDesktopMascot in less than 5 minutes**.
 
 ## Getting Started
-

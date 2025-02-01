@@ -9,3 +9,29 @@
   height: 200px;
   width: 200px;
 }
+
+.character_wave_img {
+  display: flex;
+  margin-left: auto;
+  width: 20vw;
+}
+
+.home_background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(80%); /* 画像の明るさを調整（50%で暗くする） */
+}
+
+.catchphrase {
+  position: absolute;
+  top: 50%; /* 画面の50%の位置 */
+  left: 10%; /* 左端から10%の位置 */
+  transform: translateY(-50%); /* 完全に中央に */
+  color: white;
+  font-size: 5rem;
+}

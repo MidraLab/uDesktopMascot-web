@@ -1,64 +1,62 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'uDesktopMascot',
-  tagline: 'uDesktopMascot Documentation',
-  favicon: 'img/favicon.ico',
+  title: "uDesktopMascot",
+  tagline: "uDesktopMascot Documentation",
+  favicon: "img/favicon.ico",
 
   // サイトのプロダクションURLをここに設定します
-  url: 'https://midralab.github.io/',
+  url: "https://midralab.github.io/",
   // サイトが提供される/<baseUrl>/パス名を設定します
   // GitHubページのデプロイメントの場合、通常は'/<projectName>/'です
-  baseUrl: '/uDesktopMascot/',
+  baseUrl: "/uDesktopMascot/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'MidraLab', // Usually your GitHub org/user name.
-  projectName: 'uDesktopMascot', // Usually your repo name.
+  organizationName: "MidraLab", // Usually your GitHub org/user name.
+  projectName: "uDesktopMascot", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/MidraLab/uDesktopMascot-web',
+          editUrl: "https://github.com/MidraLab/uDesktopMascot-web",
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/MidraLab/uDesktopMascot-web',
+          editUrl: "https://github.com/MidraLab/uDesktopMascot-web",
           // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -66,54 +64,75 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: 'uDesktopMascot',
+      title: "uDesktopMascot",
       logo: {
-        alt: 'uDesktopMascot Logo',
-        src: 'img/logo.svg',
+        alt: "uDesktopMascot Logo",
+        src: "img/icon.jpg",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          to: "/download",
+          position: "left",
+          label: "ダウンロード",
         },
         {
-          href: 'https://github.com/MidraLab/uDesktopMascot',
-          label: 'GitHub',
-          position: 'right',
+          type: "docSidebar",
+          sidebarId: "creatorSidebar",
+          position: "left",
+          label: "クリエーター向け",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "developerSidebar",
+          position: "left",
+          label: "開発者向け",
+        },
+        {
+          to: "/faq",
+          label: "FAQ",
+          position: "left",
+        },
+        {
+          to: "/update",
+          position: "left",
+          label: "更新情報",
+        },
+        {
+          href: "https://github.com/MidraLab/uDesktopMascot",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: "Tutorial",
+              to: "/docs/intro",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'X',
-              href: 'https://x.com/midra_lab',
+              label: "X",
+              href: "https://x.com/midra_lab",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/MidraLab/',
+              label: "GitHub",
+              href: "https://github.com/MidraLab/",
             },
           ],
         },
