@@ -13,12 +13,21 @@ const config: Config = {
   url: "https://midralab.github.io/",
   // サイトが提供される/<baseUrl>/パス名を設定します
   // GitHubページのデプロイメントの場合、通常は'/<projectName>/'です
+<<<<<<< HEAD
   baseUrl: "/uDesktopMascot/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "MidraLab", // Usually your GitHub org/user name.
   projectName: "uDesktopMascot", // Usually your repo name.
+=======
+  baseUrl: '/uDesktopMascot-web/',
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'MidraLab', // Usually your GitHub org/user name.
+  projectName: 'uDesktopMascot-web', // Usually your repo name.
+>>>>>>> 6608d0bc5d4e8137e177551bfba3a064727d58db
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -39,7 +48,8 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/MidraLab/uDesktopMascot-web",
+          editUrl:
+            'https://github.com/MidraLab/uDesktopMascot-web/blob/main/',
         },
         blog: {
           showReadingTime: true,
@@ -49,7 +59,8 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/MidraLab/uDesktopMascot-web",
+          editUrl:
+            'https://github.com/MidraLab/uDesktopMascot-web/blob/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
