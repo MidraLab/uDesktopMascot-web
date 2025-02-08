@@ -27,8 +27,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "ja",
+    locales: ["ja"],
   },
 
   presets: [
@@ -64,7 +64,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/icon.jpg",
     navbar: {
       title: "uDesktopMascot",
       logo: {
@@ -93,11 +93,6 @@ const config: Config = {
           to: "/faq",
           label: "FAQ",
           position: "left",
-        },
-        {
-          to: "/update",
-          position: "left",
-          label: "更新情報",
         },
         {
           href: "https://github.com/MidraLab/uDesktopMascot",
