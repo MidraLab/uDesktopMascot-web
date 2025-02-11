@@ -1,11 +1,27 @@
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
-}
-
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+
+.character_wave_img {
+  display: flex;
+  margin-left: auto;
+  width: 20vw;
+}
+
+.home_background img {
+  width: 100%;
+  height: 95vh;
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
+}
+
+.catchphrase {
+  position: absolute;
+  top: 50%; /* 画面の50%の位置 */
+  left: 10%; /* 左端から10%の位置 */
+  transform: translateY(-50%); /* 完全に中央に */
+  color: white;
+  font-size: 5rem;
 }

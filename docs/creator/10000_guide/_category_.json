@@ -1,0 +1,8 @@
+{
+  "label": "各種ガイド",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "各種ガイドを紹介します。"
+  }
+}

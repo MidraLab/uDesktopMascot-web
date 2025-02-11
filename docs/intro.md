@@ -1,12 +1,7 @@
 ---
-sidebar_position: 1
+title: はじめに
 ---
 
-# Tutorial Intro
+# Docusaurus ドキュメントのイントロ
 
-Let's discover **uDesktopMascot in less than 5 minutes**.
-
-## Getting Started
-
-test
-
+このプロジェクトの概要と基本情報を記載してください。
