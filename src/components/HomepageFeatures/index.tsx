@@ -4,6 +4,8 @@ import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 import character_wave from "../../img/character_wave.png";
 import background from "../../img/uDM_MainCapsule.png";
+import DownloadButton from "../Button/DownloadButton";
+import Download from "../Download/download";
 
 type FeatureItem = {
   title: string;
@@ -64,10 +66,10 @@ export default function HomepageFeatures(): ReactNode {
       <div className={styles.home_background}>
         <img src={background} />
       </div>
-      <div className={styles.catchphrase}>
+      {/* <div className={styles.catchphrase}>
         二次元の恋人を、<br></br>
         現実に・・・
-      </div>
+      </div> */}
 
       {/* <div className={styles.character_wave_img}>
         <img src={character_wave} />
@@ -79,6 +81,7 @@ export default function HomepageFeatures(): ReactNode {
           ))}
         </div>
       </div> */}
+      <Download />
     </section>
   );
 }

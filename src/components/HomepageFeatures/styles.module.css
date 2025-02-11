@@ -1,10 +1,3 @@
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
-}
-
 .featureSvg {
   height: 200px;
   width: 200px;
@@ -17,14 +10,11 @@
 }
 
 .home_background img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   object-fit: cover;
+  object-position: top;
   z-index: -1;
-  filter: brightness(80%); /* 画像の明るさを調整（50%で暗くする） */
 }
 
 .catchphrase {
