@@ -8,10 +8,10 @@ export default function Summary() {
     <section>
       <div className={styles.summary_frame}>
         <img className={styles.summary_img} src={summary_img} />
-        <h2 className={styles.title}>
+        <h1 className={styles.title}>
           なんでも作れるデジタルの世界だからこそ、<br></br>
           もっと自由に、自分らしく。
-        </h2>
+        </h1>
       </div>
     </section>
   );
