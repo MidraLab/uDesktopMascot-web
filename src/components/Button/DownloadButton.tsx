@@ -7,7 +7,7 @@ export default function DownloadButtons() {
     <div className={styles.buttonContainer}>
       {/* Steam ダウンロードボタン */}
       <a
-        href="https://store.steampowered.com/about/"
+        href="https://store.steampowered.com/app/3463150/uDesktopMascot/"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.downloadButton + " " + styles.steamButton}
@@ -17,7 +17,7 @@ export default function DownloadButtons() {
 
       {/* Booth ダウンロードボタン */}
       <a
-        href="https://booth.pm/ja"
+        href="https://t.co/gpCOQzZdMo"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.downloadButton + " " + styles.boothButton}
