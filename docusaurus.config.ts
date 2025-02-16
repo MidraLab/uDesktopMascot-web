@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "uDesktopMascot",
   tagline: "uDesktopMascot Documentation",
-  favicon: "img/favicon.ico",
+  favicon: "img/icon.jpg",
 
   // サイトのプロダクションURLをここに設定します
   url: "https://midralab.github.io/",
