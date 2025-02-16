@@ -42,7 +42,7 @@ export default function HowTo() {
               <div className={styles.munue_content}>
                 <img src={menue} />
                 <h2 className={styles.explain}>
-                  ・その他追加機能も続々アップデート！
+                  ・その他追加機能も<br></br>　続々アップデート！
                 </h2>
               </div>
             </>
