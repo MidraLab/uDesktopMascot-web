@@ -63,8 +63,8 @@
 }
 /* スマホ用レイアウト */
 @media (max-width: 768px) {
-  .howto_img_contnt {
-    width: 100%;
+  .munue_content img {
+    width: 30%;
   }
   .howto_character img {
     width: 60vw;
