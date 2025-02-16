@@ -28,9 +28,10 @@ export default function HowTo() {
                 <img src={howto_character} />
               </div>
               <h2 className={styles.howToTitle}>
-                オリジナルモデルを自由自在に配置・カスタマイズ。
-                <br />
-                あなたのデスクトップのマスコットにすることができます。
+                デスクトップ上にオリジナルモデルを<br></br>
+                自由自在に配置・カスタマイズすることができます。<br></br>　
+                <br></br>
+                あなただけの“デスクトップマスコット”が完成！
               </h2>
               <h2 className={styles.explain}>
                 ・簡単操作でモデルやボイスを変更
@@ -49,9 +50,10 @@ export default function HowTo() {
             // PC版（テキストを先に表示）
             <>
               <h2 className={styles.howToTitle}>
-                オリジナルモデルを自由自在に配置・カスタマイズ。
-                <br />
-                あなたのデスクトップのマスコットにすることができます。
+                デスクトップ上にオリジナルモデルを<br></br>
+                自由自在に配置・カスタマイズすることができます。<br></br>　
+                <br></br>
+                あなただけの“デスクトップマスコット”が完成！
               </h2>
               <h2 className={styles.explain}>
                 ・簡単操作でモデルやボイスを変更
