@@ -1,86 +1,29 @@
-import type { ReactNode } from "react";
-import clsx from "clsx";
-import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
-import character_wave from "../../img/character_wave.png";
-import background from "../../img/uDM_MainCapsule.png";
-import DownloadButton from "../Button/DownloadButton";
+import catchphrase from "../../img/catchphrase.png";
+import background from "../../img/uDM_MainCapsule.jpg";
+import background_sm from "../../img/background_sm.jpg";
 import Download from "../Download/download";
+import Preview from "../Preview/preview";
+import HowTo from "../HowTo/howto";
+import Summary from "../Summary/summary";
 
-type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<"svg">>;
-  description: ReactNode;
-};
-
-const FeatureList: FeatureItem[] = [
-  {
-    title: "Easy to Use",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: "Focus on What Matters",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: "Powered by React",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-];
-
-function Feature({ title, Svg, description }: FeatureItem) {
-  return (
-    <div className={clsx("col col--4")}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
-
-export default function HomepageFeatures(): ReactNode {
+export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className={styles.home_background}>
-        <img src={background} />
+        <img src={background} className={styles.pc} alt="PC用背景" />
+        <img src={background_sm} className={styles.sm} alt="スマホ用背景" />
       </div>
-      {/* <div className={styles.catchphrase}>
-        二次元の恋人を、<br></br>
-        現実に・・・
-      </div> */}
 
-      {/* <div className={styles.character_wave_img}>
-        <img src={character_wave} />
-      </div> */}
-      {/* <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div> */}
+      <Download />
+      <img
+        className={styles.catchphrase}
+        src={catchphrase}
+        alt="キャッチフレーズ"
+      />
+      <Preview />
+      <HowTo />
+      <Summary />
       <Download />
     </section>
   );

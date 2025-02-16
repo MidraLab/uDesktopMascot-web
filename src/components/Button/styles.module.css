@@ -1,0 +1,79 @@
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.downloadButton {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 上下中央寄せを追加 */
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 220px;
+}
+
+/* Steamボタン */
+.steamButton {
+  background-color: #1b2838; /* Steamのイメージカラー */
+}
+
+.steamButton:hover {
+  background-color: #2a475e; /* ホバー時に色を少し変える */
+}
+
+/* Boothボタン */
+.boothButton {
+  background-color: #fb4c4f; /* Boothのイメージカラー */
+}
+
+/* スマホ時の画像切り替え */
+@media (max-width: 768px) {
+  .buttonContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .downloadButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 170px;
+  }
+}
+
+@media (max-width: 450px) {
+  .downloadButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100px;
+  }
+}

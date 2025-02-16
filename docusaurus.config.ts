@@ -73,11 +73,6 @@ const config: Config = {
       },
       items: [
         {
-          to: "/download",
-          position: "left",
-          label: "ダウンロード",
-        },
-        {
           type: "docSidebar",
           sidebarId: "creatorSidebar",
           position: "left",
@@ -90,11 +85,6 @@ const config: Config = {
           label: "開発者向け",
         },
         {
-          to: "/faq",
-          label: "FAQ",
-          position: "left",
-        },
-        {
           href: "https://github.com/MidraLab/uDesktopMascot",
           label: "GitHub",
           position: "right",
@@ -104,15 +94,6 @@ const config: Config = {
     footer: {
       style: "dark",
       links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Tutorial",
-              to: "/docs/intro",
-            },
-          ],
-        },
         {
           title: "Community",
           items: [

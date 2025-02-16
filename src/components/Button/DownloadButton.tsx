@@ -1,15 +1,29 @@
 import React from "react";
-
-interface DownloadButtonProps {
-  label: string;
-}
-
-const DownloadButton: React.FC<DownloadButtonProps> = ({ label }) => {
+import styles from "./styles.module.css";
+import steam_logo from "../../img/steam_logo.png";
+import booth_logo from "../../img/booth_logo.png";
+export default function DownloadButtons() {
   return (
-    <button className="px-6 py-3 text-lg bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
-      {label}
-    </button>
-  );
-};
+    <div className={styles.buttonContainer}>
+      {/* Steam ダウンロードボタン */}
+      <a
+        href="https://store.steampowered.com/about/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.downloadButton + " " + styles.steamButton}
+      >
+        <img src={steam_logo}></img>
+      </a>
 
-export default DownloadButton;
+      {/* Booth ダウンロードボタン */}
+      <a
+        href="https://booth.pm/ja"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.downloadButton + " " + styles.boothButton}
+      >
+        <img src={booth_logo}></img>
+      </a>
+    </div>
+  );
+}

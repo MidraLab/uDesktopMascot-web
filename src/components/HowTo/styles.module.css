@@ -1,0 +1,72 @@
+.howToSection {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  z-index: -1;
+}
+
+/* 背景画像をコンテンツの高さに合わせてカバー */
+.howToSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* 親要素に応じて高さを調整 */
+  background-image: url("../../img/graph.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.howto_img_contnt {
+  width: 80%;
+  margin: auto;
+}
+
+.howto_img_contnt img {
+  width: 100%;
+}
+
+.howto_character img {
+  width: 50vw;
+  object-fit: cover;
+}
+
+.howto_character {
+  display: flex;
+  align-items: flex-end; /* 縦方向に下寄せ */
+  justify-content: flex-end; /* 横方向に右寄せ */
+  width: 100%; /* 親要素の幅を確保 */
+}
+
+.explain {
+  color: red;
+  text-align: left;
+}
+
+.munue_content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* 縦方向の中央揃え */
+  width: 100%;
+  gap: 20px; /* 余白を追加 */
+  padding-top: 10vw;
+}
+
+.munue_content img {
+  width: 300px;
+  max-width: 50%;
+  object-fit: cover;
+}
+/* スマホ用レイアウト */
+@media (max-width: 768px) {
+  .howto_img_contnt {
+    width: 100%;
+  }
+  .howto_character img {
+    width: 60vw;
+    margin-top: 5vw;
+  }
+}
