@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import catchphrase from "../../img/catchphrase.png";
 import background from "../../img/uDM_MainCapsule.jpg";
@@ -8,19 +9,47 @@ import HowTo from "../HowTo/howto";
 import Summary from "../Summary/summary";
 
 export default function HomepageFeatures() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // 初回実行
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section className={styles.features}>
-      <div className={styles.home_background}>
+      <section className={styles.home_background}>
         <img src={background} className={styles.pc} alt="PC用背景" />
         <img src={background_sm} className={styles.sm} alt="スマホ用背景" />
-      </div>
+      </section>
 
-      <Download />
-      <img
-        className={styles.catchphrase}
-        src={catchphrase}
-        alt="キャッチフレーズ"
-      />
+      {isMobile ? (
+        // スマホ用の順番
+        <>
+          <img
+            className={styles.catchphrase}
+            src={catchphrase}
+            alt="キャッチフレーズ"
+          />
+          <Download />
+        </>
+      ) : (
+        // PC用の順番
+        <>
+          <Download />
+          <img
+            className={styles.catchphrase}
+            src={catchphrase}
+            alt="キャッチフレーズ"
+          />
+        </>
+      )}
+
       <Preview />
       <HowTo />
       <Summary />
