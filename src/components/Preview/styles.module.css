@@ -53,6 +53,7 @@
     width: 90vw;
     margin-top: 5vh;
     margin: auto;
+    margin-bottom: 5vw;
   }
 
   .preview_video {
@@ -62,7 +63,8 @@
   .preview_character {
     width: 60vw;
     position: relative;
-    margin-top: 5vw;
+    margin-bottom: 8vw;
+    margin-top: -5vh;
   }
 
   .preview_frame::before {
