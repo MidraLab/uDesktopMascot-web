@@ -4,12 +4,10 @@ import styles from "./styles.module.css";
 
 export default function Download() {
   return (
-    <section className={styles.container}>
-      <h2 className={styles.title}>無料でダウンロード</h2>
+    <section className={styles.download_container}>
+      <div className={styles.title}>無料でダウンロード</div>
       <div className={styles.buttonContainer}>
-        <DownloadButton label="ダウンロード1" />
-        <DownloadButton label="ダウンロード2" />
-        <DownloadButton label="ダウンロード3" />
+        <DownloadButton />
       </div>
     </section>
   );

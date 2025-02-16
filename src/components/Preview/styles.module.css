@@ -1,0 +1,87 @@
+.preview_frame {
+  width: 70vw;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* 疑似要素の基準位置 */
+  flex-direction: column; /* スマホ時に縦並び */
+}
+
+.preview_video {
+  width: 50vw;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+.preview_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview_character {
+  width: 50vw;
+  margin-top: -10vh;
+}
+
+.preview_frame::before {
+  content: "";
+  position: absolute;
+  top: -5vw;
+  left: 3vw;
+  width: 7vw;
+  height: 7vw;
+  border-top: 5px solid #ee4504;
+  border-left: 5px solid #ee4504;
+}
+
+.preview_frame::after {
+  content: "";
+  position: absolute;
+  bottom: -5vw;
+  right: 3vw;
+  width: 7vw;
+  height: 7vw;
+  border-bottom: 5px solid #ee4504;
+  border-right: 5px solid #ee4504;
+}
+
+/* スマホ用レイアウト */
+@media (max-width: 768px) {
+  .preview_frame {
+    width: 90vw;
+    margin-top: 5vh;
+    margin: auto;
+    margin-bottom: 5vw;
+  }
+
+  .preview_video {
+    width: 80vw;
+  }
+
+  .preview_character {
+    width: 60vw;
+    position: relative;
+    margin-bottom: 8vw;
+    margin-top: -5vh;
+  }
+
+  .preview_frame::before {
+    top: -5vw;
+    left: -10px;
+    width: 5vw;
+    height: 5vw;
+    border-top: 3px solid #ee4504;
+    border-left: 3px solid #ee4504;
+  }
+
+  .preview_frame::after {
+    bottom: -5vw;
+    right: -10px;
+    width: 5vw;
+    height: 5vw;
+    border-bottom: 3px solid #ee4504;
+    border-right: 3px solid #ee4504;
+  }
+}

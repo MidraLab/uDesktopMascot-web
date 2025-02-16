@@ -1,30 +1,115 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* ==========================
+   🌍 グローバルスタイル
+========================== */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap");
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #fe6a02; /* メインカラー */
+  --ifm-color-primary-dark: #e65f02;
+  --ifm-color-primary-darker: #cc5602;
+  --ifm-color-primary-darkest: #b34d02;
+  --ifm-color-primary-light: #fd9d24; /* アクセントカラー */
+  --ifm-color-primary-lighter: #ffa84d;
+  --ifm-color-primary-lightest: #ffb866;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+[data-theme="dark"] {
+  --ifm-color-primary: #fd9d24; /* ダークモードで少し落ち着いたオレンジ */
+  --ifm-color-primary-dark: #e58c20;
+  --ifm-color-primary-darker: #cc7b1d;
+  --ifm-color-primary-darkest: #b36a19;
+  --ifm-color-primary-light: #fe6a02; /* アクセントカラー（ライトモードと逆） */
+  --ifm-color-primary-lighter: #ff7f33;
+  --ifm-color-primary-lightest: #ff9955;
+  --docusaurus-highlighted-code-line-bg: rgba(
+    255,
+    165,
+    0,
+    0.2
+  ); /* 少しオレンジがかったハイライト */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+section {
+  margin: 0 auto;
+  margin-bottom: 16rem;
+}
+
+.custom_container {
+  width: 100%;
+  padding: 5rem 0rem;
+  max-width: 80vw;
+  margin: auto;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media (max-width: 1024px) {
+  section {
+    margin-bottom: 3.5rem;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  .custom_container {
+    width: 100%;
+    padding: 5rem 0rem;
+    max-width: 90vw;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 3rem;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  .custom_container {
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  section {
+    margin-bottom: 3rem;
+  }
+  h2 {
+    font-size: 16px;
+  }
+
+  .custom_container {
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: auto;
+  }
 }
